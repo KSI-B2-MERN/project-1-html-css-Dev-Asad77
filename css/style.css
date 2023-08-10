@@ -1,0 +1,235 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #be3144;
+  --accent-color: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+h1,
+h2 {
+  color: var(--primary-color);
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4.2rem;
+  border-bottom: 2px solid white;
+}
+
+p {
+  margin-top: 0;
+}
+/* Navbar css */
+li {
+  text-transform: capitalize;
+  padding: 2rem;
+  cursor: pointer;
+}
+li:hover {
+  background-color: #45567d;
+}
+li a:hover {
+  color: var(--primary-color);
+}
+.nav-bar {
+  display: flex;
+  list-style: none;
+  font-size: 2.2rem;
+  justify-content: end;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.nav-bg {
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+/* welcome css */
+.welcome-bg {
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-bg p {
+  color: #be3144;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 100;
+}
+@media only screen and (max-width: 600px) {
+  .welcome__heading {
+    font-size: 5.5rem;
+  }
+  .plan__heading {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+}
+.plan-bg {
+  background-color: #45567d;
+  padding: 10rem 0;
+}
+.plan__heading {
+  border-bottom: 3px solid white;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+.card__text {
+  padding: 2rem 3rem;
+  color: white;
+  text-align: center;
+  background-color: #3a3d40;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.card {
+  padding: 0;
+  border: black;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 31%;
+  margin-bottom: 2rem;
+}
+.card-main {
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-basis: 90%;
+    margin-bottom: 2rem;
+  }
+  .card-main {
+    justify-content: center;
+  }
+}
+.code {
+  color: #3a3d40;
+  transition: color 1s;
+}
+.card:hover .code {
+  color: #be3144;
+}
+.card-main {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .card {
+    flex-basis: 40%;
+    margin-bottom: 2rem;
+  }
+  .card-main {
+    justify-content: space-around;
+  }
+}
+.btn-show {
+  padding: 2rem 3rem;
+  background-color: #3a3d40;
+  color: white;
+  border-radius: 10px;
+}
+.btn-show:hover {
+  color: white;
+  background-color: #be3144;
+  transition: background-color 0.5s;
+}
+
+.btn-show::after {
+  content: ">";
+  font-weight: bold;
+  font-size: 2rem;
+}
+.btn-show:hover::after {
+  margin-left: 1rem;
+  transition: margin 0.5s;
+}
+/***** Social Media *****/
+.social-bg {
+  background: #3a3d40;
+
+  border-bottom: 5px solid #be3144;
+}
+.social__content {
+  padding: 20rem 10rem;
+}
+.social__text {
+  font-style: italic;
+  font-weight: 250;
+  margin-top: 0.5rem;
+}
+.fb__icon {
+  width: 15%;
+  margin-top: -5px;
+  margin-right: 1rem;
+}
+.social__icons a {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  transition: transform 1s, margin 1s;
+}
+.social__icons {
+  padding: 0 12rem;
+}
+.social__icons a:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 600px) {
+  .social__icons {
+    padding: 0;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+.social__icons a {
+    margin-bottom: 2rem;
+  
+  }
+  /* This is my css */
+  .footer__content {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+  .fake__text {
+    font-size: 1.6rem;
+  }
+  .copy__text {
+    margin-left: 7rem;
+  }
+}
+
+/***** End Social Media *****/
+/***** footer *****/
+.footer-bg {
+  background-color: #3a3d40;
+  padding: 4rem 2rem;
+}
+.copy__text {
+  font-weight: 200;
+}
+/***** End footer *****/
